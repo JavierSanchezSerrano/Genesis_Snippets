@@ -1,0 +1,27 @@
+
+/* Sticky header for Genesis Sample Theme */
+
+.site-header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav.nav-primary {
+    padding-top: 164px; /*height of header (can be easily obtained using Firebug or another web browser developer tool)*/
+}
+The above is a generic site-wide solution.
+
+In this particular demo, the actual CSS used to restrict to just this Page is:
+
+/* Sticky header */
+
+.page-id-236 .site-header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.page-id-236 nav.nav-primary {
+    padding-top: 164px; /*height of header (can be easily obtained using Firebug)*/
+}
