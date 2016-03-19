@@ -1,0 +1,13 @@
+/* Call-to-action Menu Link
+--------------------------------------------- */
+.genesis-nav-menu li.highlight a {
+background-color: #e5554e;
+border-radius: 3px;
+color: #fff;
+margin-left: 20px;
+}
+.genesis-nav-menu li.highlight a:hover {
+background-color: #333;
+color: #fff;
+}
+
