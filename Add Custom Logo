@@ -1,0 +1,29 @@
+//in functions.php
+
+add_theme_support( 'genesis-custom-header', array( 'width' => 960, 'height' => 100 ) );
+
+//* Adding custom logo
+add_theme_support( 'custom-header', array(
+	'width'           =>260,
+	'height'          => 55,
+	'header-selector' => '.site-title a',
+	'header-text'     => false
+) );
+
+
+//* After that in style.css modify title area
+
+.header-image .site-title > a {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("images/logo.png");
+    background-origin: padding-box;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    float: left;
+    min-height: 120px;   //* This could cut your custom logo if not match with your size
+    width: 100%;
+    
+  }
